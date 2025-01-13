@@ -13,7 +13,7 @@ const DAYS = [
 // Returns day number
 const parseDay = (s) => {
   const index = DAYS.indexOf(s);
-  return index !== -1 ? index + 1 : -1;
+  return index + 1 || -1;
 };
 
 module.exports = parseDay;
