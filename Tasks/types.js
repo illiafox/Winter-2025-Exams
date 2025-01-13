@@ -1,3 +1,5 @@
+'use strict';
+
 const countTypes = (arr) => {
   const typeCounts = {
     number: 0,

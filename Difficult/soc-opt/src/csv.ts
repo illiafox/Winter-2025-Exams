@@ -1,25 +1,25 @@
-import { City } from "./city";
+import { City } from './city';
 
 export function* parseCSV(csvData: string): Generator<City> {
-  const lines = csvData.split("\n");
+  const lines = csvData.split('\n');
 
-  const expectedHeaders = ["city", "population", "area", "density", "country"];
-  const headers = lines.shift()?.split(",") || [];
+  const expectedHeaders = ['city', 'population', 'area', 'density', 'country'];
+  const headers = lines.shift()?.split(',') || [];
 
   if (
     headers.length !== expectedHeaders.length ||
     !headers.every((header, index) => header === expectedHeaders[index])
   ) {
     throw new Error(
-      "csv headers do not match the expected format: " +
-        expectedHeaders.join(", "),
+      'csv headers do not match the expected format: ' +
+        expectedHeaders.join(', '),
     );
   }
 
   for (const line of lines) {
     if (!line.trim()) continue;
 
-    const cells = line.split(",").map((cell) => cell.trim());
+    const cells = line.split(',').map((cell) => cell.trim());
 
     if (cells.length !== expectedHeaders.length) {
       throw new Error(`header line '${line}': invalid format`);

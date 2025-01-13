@@ -1,9 +1,9 @@
-"use strict";
+'use strict';
 
-const check = require("../check.js");
+const check = require('../check.js');
 
 let i = 0;
-let ns = [];
+const ns = [];
 
 const cases = [
   [
@@ -17,7 +17,7 @@ const cases = [
     ],
     () => {
       if (i !== 3) return false;
-      return ns.join("") === "012";
+      return ns.join('') === '012';
     },
   ],
   [
@@ -31,7 +31,7 @@ const cases = [
     ],
     () => {
       if (i !== 3) return false;
-      return ns.join("") === "012";
+      return ns.join('') === '012';
     },
   ],
   [
@@ -45,9 +45,9 @@ const cases = [
     ],
     () => {
       if (i !== 5) return false;
-      return ns.join("") === "01201";
+      return ns.join('') === '01201';
     },
   ],
 ];
 
-check(cases)("schedule");
+check(cases)('schedule');

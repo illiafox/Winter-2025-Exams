@@ -1,5 +1,5 @@
-import { parseCSV } from "./csv";
-import { CityStatistics, generateCitiesStatistics } from "./stats";
+import { parseCSV } from './csv';
+import { CityStatistics, generateCitiesStatistics } from './stats';
 
 function printCityInfo(city: CityStatistics) {
   const values = [
@@ -10,7 +10,7 @@ function printCityInfo(city: CityStatistics) {
     city.country.padStart(18),
     city.densityPercentage.toString().padStart(6),
   ];
-  console.log(values.join("\t"));
+  console.log(values.join('\t'));
 }
 
 function processCityData(data: string): void {

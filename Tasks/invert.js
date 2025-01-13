@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 
 // Reverses an array without using .reverse()
 const invert = (A) => {

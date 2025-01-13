@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 
 // Deletes listed keys from dictionary
 const drop = (dict, ...keys) => {

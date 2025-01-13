@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 
 // Finds a difference between two dictionaries
 const diff = (object1, object2) => {

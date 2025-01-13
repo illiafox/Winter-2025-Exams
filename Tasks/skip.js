@@ -1,8 +1,7 @@
-"use strict";
+'use strict';
 
 // Returns array without listed values
-const skip = (array, ...removeItems) => {
-  return array.filter((item) => !removeItems.includes(item));
-};
+const skip = (array, ...removeItems) =>
+  array.filter((item) => !removeItems.includes(item));
 
 module.exports = skip;

@@ -1,3 +1,5 @@
+'use strict';
+
 // Copies all listed keys from dictionary
 const take = (dict, ...keysToKeep) => {
   const result = {};

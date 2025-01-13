@@ -1,6 +1,6 @@
-"use strict";
+'use strict';
 
-const check = require("../check.js");
+const check = require('../check.js');
 
 const cases = [
   [[[]], []],
@@ -28,4 +28,4 @@ const cases = [
   ],
 ];
 
-check(cases)("skip");
+check(cases)('skip');

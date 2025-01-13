@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 
 // Reverses dictionary, exchange keys and values
 const reverse = (dict) => {

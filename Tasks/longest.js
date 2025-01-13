@@ -1,10 +1,10 @@
-"use strict";
+'use strict';
 
 // Finds the longest string
 const longest = (line = []) => {
-  if (line.length === 0) return "Not found";
+  if (line.length === 0) return 'Not found';
 
-  let longestString = "";
+  let longestString = '';
   for (const str of line) {
     if (str.length > longestString.length) {
       longestString = str;

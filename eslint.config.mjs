@@ -1,13 +1,14 @@
-import globals from "globals";
-import pluginJs from "@eslint/js";
+import globals from 'globals';
+import pluginJs from '@eslint/js';
 
+import config from 'eslint-config-metarhia';
 
 /** @type {import('eslint').Linter.Config[]} */
 export default [
-  {languageOptions: {globals: globals.node}},
+  { languageOptions: { globals: globals.node } },
   {
     // Note: there should be no other properties in this object
-    ignores: ["Tasks/todo/**"]
+    ignores: ['Tasks/todo/**'],
   },
-  pluginJs.configs.recommended,
+  ...config,
 ];

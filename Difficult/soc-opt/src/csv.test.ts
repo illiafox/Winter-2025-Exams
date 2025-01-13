@@ -1,8 +1,8 @@
-import { City } from "./city";
-import { parseCSV } from "./csv";
-import { describe, expect, it } from "@jest/globals";
+import { City } from './city';
+import { parseCSV } from './csv';
+import { describe, expect, it } from '@jest/globals';
 
-describe("parseCSV", () => {
+describe('parseCSV', () => {
   const validCSV = `city,population,area,density,country
 Shanghai,24256800,6340,3826,China
 Delhi,16787941,1484,11313,India
@@ -11,29 +11,29 @@ Lagos,16060303,1171,13712,Nigeria
 
   const expectedCities = [
     {
-      name: "Shanghai",
+      name: 'Shanghai',
       population: 24256800,
       area: 6340,
       density: 3826,
-      country: "China",
+      country: 'China',
     },
     {
-      name: "Delhi",
+      name: 'Delhi',
       population: 16787941,
       area: 1484,
       density: 11313,
-      country: "India",
+      country: 'India',
     },
     {
-      name: "Lagos",
+      name: 'Lagos',
       population: 16060303,
       area: 1171,
       density: 13712,
-      country: "Nigeria",
+      country: 'Nigeria',
     },
   ];
 
-  it("should parse valid CSV data correctly", () => {
+  it('should parse valid CSV data correctly', () => {
     const generator = parseCSV(validCSV);
     const cities = Array.from(generator);
 

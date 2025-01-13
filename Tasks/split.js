@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 
 // Splits an array into two parts
 const splitArray = (index, array) => {
