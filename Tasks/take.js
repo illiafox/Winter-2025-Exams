@@ -2,11 +2,11 @@
 const take = (dict, ...keysToKeep) => {
   const result = {};
 
-  keysToKeep.forEach((key) => {
+  for (const key of keysToKeep) {
     if (key in dict) {
       result[key] = dict[key];
     }
-  });
+  }
 
   return result;
 };
